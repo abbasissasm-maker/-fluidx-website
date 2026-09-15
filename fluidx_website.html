@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLUIDX™ | Performance Fluids</title>
+<style>
+:root{--blue:#087cff;--green:#18d85b;--purple:#a53cff;--bg:#050609;--panel:#0d0f14;--text:#f4f5f7;--muted:#9298a3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+nav{position:fixed;top:0;width:100%;z-index:10;background:rgba(5,6,9,.82);backdrop-filter:blur(14px);border-bottom:1px solid #20232b}
+.navin{max-width:1180px;margin:auto;padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:30px;font-weight:900;font-style:italic;letter-spacing:-2px}.logo span{color:var(--blue)}
+nav a{color:#cdd1d8;text-decoration:none;margin-left:28px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px}
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:130px 24px 80px}
+.hero:after{content:"";position:absolute;width:650px;height:650px;right:-180px;top:100px;background:radial-gradient(circle,rgba(0,119,255,.25),transparent 65%);filter:blur(20px)}
+.wrap{max-width:1180px;margin:auto;width:100%;position:relative;z-index:1}
+.kicker{color:var(--blue);font-weight:700;letter-spacing:4px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(64px,11vw,145px);line-height:.82;margin:24px 0;font-style:italic;letter-spacing:-8px}
+h1 span{color:var(--blue)}
+.hero p{max-width:560px;color:var(--muted);font-size:18px;line-height:1.7}
+.btn{display:inline-block;margin-top:28px;padding:15px 25px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;border-radius:3px}
+section{padding:100px 24px}.sectionhead{max-width:1180px;margin:0 auto 45px}.sectionhead h2{font-size:48px;margin:10px 0;font-style:italic}.sectionhead p{color:var(--muted)}
+.products{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:linear-gradient(145deg,#11141b,#090a0d);border:1px solid #242832;border-radius:12px;padding:28px;min-height:430px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;right:-80px;bottom:-120px;width:260px;height:400px;transform:rotate(28deg);background:linear-gradient(90deg,transparent,rgba(0,124,255,.18));}
+.producttag{font-size:11px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
+.card h3{font-size:35px;margin:18px 0 8px}.card .type{font-weight:700;color:var(--blue);letter-spacing:1px}.card p{color:var(--muted);line-height:1.6}.spec{position:absolute;bottom:25px;left:28px;font-size:13px;letter-spacing:2px;font-weight:bold}
+.eth .type{color:var(--green)}.cool .type{color:var(--purple)}
+.about{background:#090b10;border-top:1px solid #171a20;border-bottom:1px solid #171a20}
+.aboutgrid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.about h2{font-size:52px;margin:0;font-style:italic}.about p{color:var(--muted);line-height:1.8;font-size:17px}
+.statgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.stat{padding:24px;background:#10131a;border:1px solid #222733}.stat b{font-size:34px}.stat span{display:block;color:var(--muted);margin-top:7px;font-size:12px;text-transform:uppercase;letter-spacing:1px}
+.contact{text-align:center}.contact h2{font-size:50px;margin:0 0 15px;font-style:italic}.contact p{color:var(--muted)}
+footer{padding:35px 24px;border-top:1px solid #20232b;color:#777c87;text-align:center;font-size:12px;letter-spacing:1px}
+@media(max-width:800px){nav .links{display:none}.products{grid-template-columns:1fr}.aboutgrid{grid-template-columns:1fr;gap:35px}.hero{min-height:90vh}h1{letter-spacing:-4px}.sectionhead h2,.about h2,.contact h2{font-size:38px}}
+</style>
+</head>
+<body>
+<nav><div class="navin"><div class="logo">FLUID<span>X</span>™</div><div class="links"><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap">
+<div class="kicker">Performance Fluids</div>
+<h1>BUILT FOR<br><span>PERFORMANCE.</span></h1>
+<p>FLUIDX™ develops high-performance automotive fluids for drivers who demand more from their machines.</p>
+<a class="btn" href="#products">Explore Products</a>
+</div>
+</header>
+
+<section id="products">
+<div class="sectionhead"><div class="kicker">The Lineup</div><h2>THREE FLUIDS. ONE STANDARD.</h2><p>Focused products. Serious performance. No unnecessary noise.</p></div>
+<div class="products">
+<div class="card"><div class="producttag">01 / Race Fuel</div><h3>METHANOL</h3><div class="type">RACE FUEL</div><p>High-purity methanol positioned for motorsport and performance applications.</p><div class="spec">20 L • FLUIDX™</div></div>
+<div class="card eth"><div class="producttag">02 / Fuel</div><h3>ETHANOL</h3><div class="type">FUEL GRADE</div><p>Fuel-grade ethanol for performance-focused applications and high-octane setups.</p><div class="spec">20 L • FLUIDX™</div></div>
+<div class="card cool"><div class="producttag">03 / Cooling</div><h3>ANTIFREEZE</h3><div class="type">COOLANT</div><p>Long-life coolant engineered for everyday protection and demanding automotive use.</p><div class="spec">3.5 L • FLUIDX™</div></div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="aboutgrid">
+<div><div class="kicker">Why FLUIDX</div><h2>MADE FOR THE<br>GARAGE, TRACK &amp; STREET.</h2><p>Our philosophy is simple: premium presentation, clear specifications and products designed around automotive performance.</p></div>
+<div class="statgrid"><div class="stat"><b>03</b><span>Core Products</span></div><div class="stat"><b>20L</b><span>Performance Fuel Cans</span></div><div class="stat"><b>3.5L</b><span>Coolant Format</span></div><div class="stat"><b>FLUIDX</b><span>Performance Fluids</span></div></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap"><div class="kicker">Get In Touch</div><h2>READY TO RUN FLUIDX?</h2><p>Contact us for product information, distribution and wholesale enquiries.</p><a class="btn" href="mailto:info@fluidx.com">Contact FLUIDX</a></div>
+</section>
+<footer>FLUIDX™ PERFORMANCE FLUIDS — © 2026. ALL RIGHTS RESERVED.</footer>
+</body>
+</html>
